@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body {
+    background-color:#ededf7;;
+}
+.s-header {
+    
+    background: rgb(125, 138, 164);
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+}
+.s-logo {
+    width: 50%;
+}
+
+.h-title {
+    width: 50%;
+    padding:30px 200px 0 0;
+}
+.h-title a {
+    text-decoration: none;
+    color: rgb(178, 174, 240);
+    display: block;
+    width: 36%;
+}
+.s-nav-bar ul {
+    background-color:rgb(189, 221, 236);
+    display: flex;  
+    flex-wrap: wrap;
+    border-radius: 4px;
+    flex-direction: row;  
+    width: 100%;
+    list-style-type: none;
+}
+
+.s-nav-bar li a {
+    font-size: 25px;
+    text-decoration: none;
+    padding:0 25px;
+    color: #550526;
+    overflow: hidden;
+}
+.s-nav-bar a:hover {
+    background-color: rgb(162, 195, 255);
+}
+
+@media screen and (max-width:850px) {
+    .s-nav-bar ul {
+        background-color: #494cff;
+        flex-direction:column;
+        justify-content: space-between;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    .s-nav-bar a {
+        display: block;
+    }
+
+}
+
+
+#login-form{
+    background: rgb(247, 247, 247);
+    width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 3px;
+}
+.login-input {
+    padding: 15px;
+    width: 500px;
+    margin: 10px 0;
+    font-family: tahoma;
+}
+.send-input {
+    width: 150px;
+    background: rgb(49, 116, 241);
+    color: cornsilk;
+    border: .5px solid #808080;
+    border-radius: 3px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.form-group {
+    margin: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color:#5c5c99;
+}
+.form-control {
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top:10px ;
+    padding-right:5px ;
+}
+.update-btn {
+    width: 50%;
+    background: rgb(49, 116, 241);
+    color: cornsilk;
+    border: .5px solid #808080;
+    border-radius: 3px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.update-btn:hover {
+    background-color: #1462c7;
+}
+/* fot post tiket */
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+}
+.table td , th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tr:hover {background-color: #ddd;}
+.table thead th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4c77af;
+    color: white;
+}
+
+/*for add_tiket.php*/
+.select-add_option {
+    width: 100%;
+    text-align: center;
+    background: #d9d9fc;
+    font-size: 18px;
+    cursor: pointer;
+}
+/*for show_one_tiket.php*/
+
+.show_tiket h3 , p {
+    text-align:center;
+    padding: 20px 5px;
+    text-decoration: none;
+}
+.paragraph {
+
+    margin: 0 50px;
+    overflow: hidden;
+    font-size: 18px;
+
+}
+.tiket_info {
+    background: #dfdfff;
+    line-height: 25px;
+    color: black;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+.tiket_info h1 , h2 , h3 , h4 , h5 {
+    margin:auto 10px;
+}
+
+.post {
+    color: rgb(44, 44, 44);
+    background: rgb(247, 247, 247);
+    margin: 25px 200px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 15px;
+    border-radius: 5px;
+}
+.post a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+.ask-yes-no {
+    display: block;
+    font-size: 16px;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+}
+/*دکمه پاسخ دهی به تیکت*/
+.ask-yes-no button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: #7272e1;
+    border: 1px solid #b5b2b2;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+}
+.ask-yes-no button:hover {
+    background-color: rgb(81, 81, 218);
+}
+.send-to-another-teacher {
+    display: block;
+    font-size: 16px;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+}
+.send-to-another-teacher button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ecfa2f;
+    border: 1px solid #b5b2b2;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+}
+.send-to-another-teacher button:hover {
+    background-color: #c8d603;
+}
+.green-answer {
+    color: rgb(44, 44, 44);
+    background: rgb(190, 252, 184);
+    margin: 25px 200px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+}
+.yellow-answer {
+    color: rgb(44, 44, 44);
+    background: rgb(221, 253, 131);
+    margin: 25px 200px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: block;
+}
+.answer-date {
+    line-height: 25px;
+    color: rgb(1, 15, 68);
+    margin-top: 70px;
+    border-radius: 10px;
+}
+.answer-date h4 {
+    margin:auto 10px;
+}
+/*div textarea answer at first display="none"; */
+.textarea {
+    position: relative;
+    color: rgb(44, 44, 44);
+    background: rgb(247, 247, 247);
+    text-align: center;
+    margin: 25px 200px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 15px;
+    /* border-radius: 5px; */
+    display: none;
+}
+.textarea label {
+    font-size: 18px;
+}
+.textarea textarea {
+    width: 700px;
+    border: 1px solid rgb(114, 114, 114);
+    font-size: 20px;
+    padding: 5px;
+}
+.textarea input {
+    margin-top: 10px;
+    width: 150px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.form-area {
+    position: relative;
+    color: rgb(44, 44, 44);
+    background: rgb(247, 247, 247);
+    text-align: center;
+    margin: 25px 200px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 15px;
+    /* border-radius: 5px; */
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .textarea textarea {
+        width: 300px;
+        border: 1px solid rgb(114, 114, 114);
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:500px) {
+    .textarea textarea {
+        width: 100px;
+        border: 1px solid rgb(114, 114, 114);
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+/*دکمه کنسل کردن منوی وارد کردن پاسخ دهی*/
+#cancel-answer {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0% , -50%);
+    background-color: #ff4c4c;
+    border: none;
+}
+#cancel-answer:hover {
+    background-color: rgb(253, 28, 28);
+}
+#cancel-resending {
+    cursor: pointer;
+    position: absolute;
+    top: 1.5%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0% , -50%);
+    background-color: #ff4c4c;
+    border: none;
+}
+#cancel-resending:hover {
+    background-color: rgb(253, 28, 28);
+}
+
+/* وضعیت رنگ جدول نمایش تیکت ها */
+.not-answer{
+    color:rgb(0, 62, 177);
+}
+.end-tik  {
+    color:rgb(255, 5, 5);
+}
+.recive-tik {
+    color:green;
+}
+.wating-tik {
+    color: rgb(196, 183, 0);
+}
+
+.row {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-m3 {
+    width: 33.33%;
+    padding:10px 5px;
+    
+}
+.col-m3 h3 {
+    text-align: center;
+    color:darkblue;
+    text-transform: capitalize;
+    height: 5vh;
+}
+.col-m3 p {
+    margin-top: 5px;
+    background-color: rgb(200, 207, 242)
+}
